@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, purple, violet);
+}
+
+.container {
+    background-color: #f0f0f0;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.row {
+    background: #e0e0e0;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+ 
+   
+}
+
+input {
+    flex: 1;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+input:focus {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+.row button {
+    background-color: rgb(250, 3, 3);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    gap: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.row button:hover {
+    background-color: #f72626;
+}
+
+.row button:active {
+    background-color: #d0d0d0;
+}
+.list {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.list::-webkit-scrollbar {
+    display: none;
+}
+
+.list li {
+    list-style-type: circle; /* Add this line */
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.list button {
+    background-color: #333;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list button:hover {
+    background-color: #555;
+}
+
+.list button:active {
+    background-color: #222;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
